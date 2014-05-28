@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<meta charset=utf-8>
+		<link rel=stylesheet href=styles.css>
+		<title>Are we web yet? Not really.</title>
+	</head>
+	<body>
+		<header>
+			<h1>Are we <i>web</i> yet?</h1>
+			<p><strong>Not really.</strong>
+			<em>(If you’re determined, you can use Rust for web stuff, but it’s even less ready than the language.)</em>
+		</header>
+
+		<h2 id=server>The server story</h2>
+		<p>These are the pieces we need before we’ll be ready for generally serious web development.
+		<table>
+			<thead>
+				<tr>
+					<th>Done?</th>
+					<th>Item</th>
+					<th>Library</th>
+					<th>State</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class=done title="Almost (still unstable)"></td>
+					<td colspan=2>Rust itself</td>
+					<td class=almost>Usable, but there are still changes happening</td>
+				</tr>
+				<tr>
+					<td rowspan=2 class=done title="Vaguely (you can play with it, but it’s nowhere near ready)"></td>
+					<td rowspan=2>HTTP server</td>
+					<td><a href=https://github.com/chris-morgan/rust-http>rust-http</a></td>
+					<td class=vaguely><a href=http://chrismorgan.info/blog/introducing-teepee.html>Obsolete</a> † but usable with determination</td>
+				</tr>
+				<tr>
+					<td><a href=http://teepee.rs>Teepee</a></td>
+					<td class=no>Under development, completely unusable</td>
+				</tr>
+				<tr>
+					<td class=done title=Almost></td>
+					<td>Database drivers</td>
+					<td><a href=https://github.com/sfackler/rust-postgres>rust-postgres</a></td>
+					<td class=yes>Functional (though still prone to change)</td>
+				</tr>
+				<tr>
+					<td class=done title=No></td>
+					<td>Email</td>
+					<td colspan=2></td>
+				</tr>
+				<tr>
+					<td class=done title=No></td>
+					<td colspan=3>Several hundred thousand things about the place</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<p>… plus most people will want a fancy ORM, a full‐stack framework, <i>&amp;c. ad infinitum</i>.
+
+		<p>† rust-http is obsolete and no new development is taking place on it; however, it <em>is</em> being kept up to date against Rust master, so it <em>can</em> still be used.
+
+		<p><small>(OK, I admit it. Mildly exotic Unicode symbols and lots of colours entrapped me and so I made a fancy table layout rather than just a list with ☑ or ☐.)</small>
+
+		<h2>The client side</h2>
+		<p>The requirements for clients tend to be much simpler than those for servers; very often just a straightforward HTTP library is enough.
+
+		<table>
+			<thead>
+				<tr>
+					<th>Done?</th>
+					<th>Item</th>
+					<th>Library</th>
+					<th>State</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class=done title="Almost (still unstable)"></td>
+					<td colspan=2>Rust itself</td>
+					<td class=almost>Usable, but there are still changes happening</td>
+				</tr>
+				<tr>
+					<td rowspan=2 class=done title="Vaguely (you can play with it, but it’s nowhere near ready; it’s even less ready than the server)"></td>
+					<td rowspan=2>HTTP client</td>
+					<td><a href=https://github.com/chris-morgan/rust-http>rust-http</a></td>
+					<td class=vaguely><a href=http://chrismorgan.info/blog/introducing-teepee.html>Obsolete</a> † but usable with determination</td>
+				</tr>
+				<tr>
+					<td><a href=http://teepee.rs>Teepee</a></td>
+					<td class=no>Under development, completely unusable</td>
+				</tr>
+				<tr>
+					<td class=done title=No></td>
+					<td colspan=3>A million and one things on the periphery (robots.txt, oAuth, <i>&amp;c.</i>)</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<footer>
+			<p>© 2014 Chris Morgan and the Teepee developers; licensed <a rel=license href=http://creativecommons.org/licenses/by/3.0/>CC-BY</a>.
+
+			<p>Just at present this site is rather lacking in detail. It could do with a lot more fleshing out of the sorts of things that people will want before they will consider Rust ready for web development. If you want to improve it—<wbr><a href=https://github.com/teepee/arewewebyet>please do</a>.
+		</footer>
+
+	</body>
+</html>

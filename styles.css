@@ -1,0 +1,213 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,500,300italic,500italic|Ubuntu+Mono:400,700,400italic,700italic);
+
+:root {
+	font-family: Ubuntu, serif;
+	font-size: 24px;
+	//text-align: center;
+	background-color: #f0f0ea;
+	background-image: linear-gradient(#e0e0da, #f0f0ea 400px);
+	background-image: linear-gradient(#e0e0da, #f0f0ea 50vh);
+	background-repeat: no-repeat;
+	color: #202020;
+	line-height: 1.6;
+	font-weight: 300;
+}
+
+header {
+	line-height: 2;
+}
+
+h1, h2, h3, h4, h5, h6, strong, th {
+	font-weight: 500;
+}
+
+@media print {
+	:root {
+		color: #000;
+	}
+}
+
+body {
+	max-width: 40em;
+	padding: 2em 4em;
+	margin: 0 auto;
+}
+
+:root {
+	overflow-x: hidden;
+}
+
+:root::before {
+	content: url(rust.png);
+	position: absolute;
+	top: -128px;
+	right: -128px;
+	width: 512px;
+	height: 512px;
+	opacity: 0.8;
+	z-index: -1;
+	display: block;
+	-webkit-transform: rotate(15deg);
+	transform: rotate(15deg);
+	/* Let’s see if we can catch anyone with this… one minute per step 😉
+	 * [Alas, this is bad for CPU usage—stupid WebKit/Blink.]
+	-webkit-animation: round-and-round 1920s steps(32, end) infinite;
+	animation: round-and-round 1920s steps(32, end) infinite; */
+}
+
+@-webkit-keyframes round-and-round {
+	0% { -webkit-transform: rotate(15deg); }
+	100% { -webkit-transform: rotate(375deg); }
+}
+
+@keyframes round-and-round {
+	0% { transform: rotate(15deg); }
+	100% { transform: rotate(375deg); }
+}
+
+/*@keyframes swirl {
+	0% { transform: rotate(25deg); }
+	10% { transform: rotate(25deg); }
+	100% { transform: rotate(15deg); }
+}*/
+
+h1 {
+	margin: 0;
+	font-size: 3rem;
+	color: #666;
+	font-weight: 300;
+}
+
+h1, h1 + p {
+	text-shadow: 0 0 1px #e0e0da,
+				 0 0 1px #e0e0da,
+				 0 0 2px #e0e0da,
+				 0 0 2px #e0e0da,
+				 0 0 1rem #e0e0da,
+				 0 0 2rem #e0e0da,
+				 0 0 3rem #e0e0da,
+				 0 0 4rem #e0e0da,
+				 0 0 5rem #e0e0da;
+}
+
+h1 i {
+	color: #333;
+	font-style: normal;
+	font-weight: 500;
+}
+
+h1 + p {
+	margin: 0 0 1em;
+	color: #000;
+	font-size: 5rem;
+}
+
+h1 + p em {
+	display: block;
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
+:not(li) > ul {
+	display: inline-block;
+	text-align: left;
+}
+
+ul {
+	padding: 0 0 0 1.5em;
+	list-style: none;
+}
+
+li {
+	display: block;
+}
+
+ul li::before {
+	margin-left: -1.5em;
+	content: "☐";
+	width: 1em;
+	margin-right: 0.5em;
+	display: inline-block;
+	text-align: center;
+	cursor: default;
+}
+
+ul li.bullet::before {
+	content: "•";
+}
+
+ul li.y:before {
+	content: "☑";
+}
+
+th {
+	padding: 0.2em 0.3em;
+}
+
+td {
+	border: 1px solid #d7c6b5;
+	padding: 0.2em 0.3em;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td.done {
+	text-align: center;
+}
+
+td[title~=No], td.no {
+	background-color: rgba(255, 0, 0, 0.25);
+	color: #550000;
+}
+td[title~=No]::after { content: '✗'; }
+
+td[title~=Yes], td.yes {
+	background-color: rgba(0, 204, 0, 0.25);
+	color: #005500;
+}
+td[title~=Yes]::after { content: '✓'; }
+
+td[title~=Almost], td.almost {
+	background-color: rgba(204, 204, 0, 0.25);
+	color: #333300;
+}
+td[title~=Almost]::after { content: '⪅'; }
+
+td[title~=Vaguely], td.vaguely {
+	background-color: rgba(255, 128, 0, 0.25);
+	color: #442200;
+}
+td[title~=Vaguely]::after { content: '≪'; }
+
+footer::before {
+	content: "";
+	display: block;
+	margin: 6em auto 4em auto;
+	width: 50%;
+	border-top: 1px solid #cba;
+}
+
+footer {
+	font-size: 80%;
+	opacity: 0.8;
+	orphans: avoid;
+}
+
+@media screen and (max-width: 65em) {
+	:root::before { opacity: 0.65; }
+}
+
+@media screen and (max-width: 50em) {
+	:root { font-size: 20px; line-height: 1.5; }
+	:root::before { opacity: 0.5; }
+	body { padding: 1em 1.5em; }
+	h1 + p { font-size: 4rem; }
+}
+
+@media screen and (max-width: 35em) {
+	:root { font-size: 16px; }
+	:root::before { opacity: 0.33; }
+	footer { font-size: 1em; }
+}
