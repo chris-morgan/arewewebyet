@@ -173,7 +173,7 @@ td[title~=Almost], td.almost {
 	background-color: rgba(204, 204, 0, 0.25);
 	color: #333300;
 }
-td[title~=Almost]::after { content: '⪅'; }
+td[title~=Almost]::after { content: '⋍'; }
 
 td[title~=Vaguely], td.vaguely {
 	background-color: rgba(255, 128, 0, 0.25);
