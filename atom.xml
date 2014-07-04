@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Are we web yet?</title>
+    <link href="http://arewewebyet.com/atom.xml" rel="self" />
+    <link href="http://arewewebyet.com/"/>
+    <updated>2014-05-28T15:00:00Z</updated>
+    <id>http://arewewebyet.com/atom.xml</id>
+    <entry>
+        <title>Not really.</title>
+        <author><name>Chris Morgan</name></author>
+		<link href="http://arewewebyet.com/"/>
+        <updated>2014-05-28T15:00:00Z</updated>
+        <published>2014-05-28T15:00:00Z</published>
+        <id>http://arewewebyet.com/#not-really</id>
+        <content>Not really.</content>
+    </entry>
+</feed>
