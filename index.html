@@ -4,13 +4,13 @@
 		<meta charset=utf-8>
 		<link rel=stylesheet href=styles.css>
 		<link href=atom.xml type=application/atom+xml rel=alternate title="Atom feed (for state changes)">
-		<title>Are we web yet? Not really.</title>
+		<title>Are we web yet? Getting there.</title>
 	</head>
 	<body>
 		<header>
 			<h1>Are we <i>web</i> yet?</h1>
-			<p><strong>Not really.</strong>
-			<em>(If you’re determined, you can use Rust for web stuff, but it’s even less ready than the language.)</em>
+			<p><strong>Getting there.</strong>
+			<em>(You can use Rust for web stuff, but the ecosystem isn’t mature yet.)</em>
 		</header>
 
 		<h2 id=server>The server story</h2>
@@ -26,26 +26,18 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td class=done title=Almost></td>
+					<td class=done title=Yes></td>
 					<td colspan=2>Rust itself</td>
-					<td class=almost>Usable, but there are still changes happening</td>
+					<td class=yes>Rust 1.0 is just round the corner</td>
 				</tr>
 				<tr>
-					<td rowspan=4 class=done title=Vaguely></td>
-					<td rowspan=4>HTTP server</td>
-					<td><a href=https://github.com/chris-morgan/rust-http>rust-http</a></td>
-					<td class=vaguely><a href=http://chrismorgan.info/blog/introducing-teepee.html>Obsolete</a> † but usable with determination</td>
-				</tr>
-				<tr>
-					<td><a href=http://teepee.rs>Teepee</a></td>
-					<td class=no>Under development, completely unusable</td>
-				</tr>
-				<tr>
+					<td rowspan=2 class=done title=Almost></td>
+					<td rowspan=2>HTTP server</td>
 					<td><a href=http://github.com/hyperium/hyper>Hyper</a></td>
 					<td class=almost>Functional, but under active development</td>
 				</tr>
 				<tr>
-					<td><a href=http://github.com/frewsxcv/tiny-http>tiny-Http</a></td>
+					<td><a href=http://github.com/frewsxcv/tiny-http>tiny-http</a></td>
 					<td class=almost>Functional, but under active development</td>
 				</tr>
 				<tr>
@@ -90,8 +82,6 @@
 
 		<p>… plus most people will want a fancy ORM, a full‐stack framework, <i>&amp;c. ad infinitum</i>.
 
-		<p>† rust-http is obsolete and no new development is taking place on it; however, it <em>is</em> being kept up to date against Rust master, so it <em>can</em> still be used.
-
 		<p><small>(OK, I admit it. Mildly exotic Unicode symbols and lots of colours entrapped me and so I made a fancy table layout rather than just a list with ☑ or ☐.)</small>
 
 		<h2>The client side</h2>
@@ -108,21 +98,13 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td class=done title="Almost (still unstable)"></td>
+					<td class=done title=Yes></td>
 					<td colspan=2>Rust itself</td>
-					<td class=almost>Usable, but there are still changes happening</td>
+					<td class=yes>Rust 1.0 is just round the corner</td>
 				</tr>
 				<tr>
-					<td rowspan=3 class=done title="Vaguely (you can play with it, but it’s nowhere near ready; it’s even less ready than the server)"></td>
-					<td rowspan=3>HTTP client</td>
-					<td><a href=https://github.com/chris-morgan/rust-http>rust-http</a></td>
-					<td class=vaguely><a href=http://chrismorgan.info/blog/introducing-teepee.html>Obsolete</a> † but usable with determination</td>
-				</tr>
-				<tr>
-					<td><a href=http://teepee.rs>Teepee</a></td>
-					<td class=no>Under development, completely unusable</td>
-				</tr>
-				<tr>
+					<td class=done title=Almost></td>
+					<td>HTTP client</td>
 					<td><a href=http://github.com/hyperium/hyper>Hyper</a></td>
 					<td class=almost>Functional, but under active development</td>
 				</tr>
@@ -134,7 +116,7 @@
 		</table>
 
 		<footer>
-			<p>© 2014 <a href=http://chrismorgan.info/>Chris Morgan</a> and the Teepee developers; licensed <a rel=license href=http://creativecommons.org/licenses/by/3.0/>CC-BY</a>.
+			<p>By <a href=http://chrismorgan.info/>Chris Morgan</a> et al.; licensed <a rel=license href=http://creativecommons.org/licenses/by/3.0/>CC-BY</a>.
 
 			<p>Just at present this site is rather lacking in detail. It could do with a lot more fleshing out of the sorts of things that people will want before they will consider Rust ready for web development. If you want to improve it—<wbr><a href=https://github.com/teepee/arewewebyet>please do</a>.
 		</footer>
