@@ -6,12 +6,12 @@
     <updated>2014-05-28T15:00:00Z</updated>
     <id>http://arewewebyet.com/atom.xml</id>
     <entry>
-        <title>Not really.</title>
+        <title>Getting there.</title>
         <author><name>Chris Morgan</name></author>
 		<link href="http://arewewebyet.com/"/>
-        <updated>2014-05-28T15:00:00Z</updated>
-        <published>2014-05-28T15:00:00Z</published>
-        <id>http://arewewebyet.com/#not-really</id>
-        <content>Not really.</content>
+        <updated>2015-05-08T00:00:00Z</updated>
+        <published>2015-05-08T00:00:00Z</published>
+        <id>http://arewewebyet.com/#getting-there</id>
+        <content>You can use Rust for web stuff, but the ecosystem isn’t mature yet.</content>
     </entry>
 </feed>
