@@ -3,7 +3,7 @@
 :root {
 	font-family: Ubuntu, serif;
 	font-size: 24px;
-	//text-align: center;
+	/*text-align: center;*/
 	background-color: #f0f0ea;
 	background-image: linear-gradient(#e0e0da, #f0f0ea 400px);
 	background-image: linear-gradient(#e0e0da, #f0f0ea 50vh);
@@ -11,6 +11,7 @@
 	color: #202020;
 	line-height: 1.6;
 	font-weight: 300;
+	overflow-x: hidden;
 }
 
 header {
@@ -33,10 +34,6 @@ body {
 	margin: 0 auto;
 }
 
-:root {
-	overflow-x: hidden;
-}
-
 :root::before {
 	content: url(rust.png);
 	position: absolute;
@@ -51,10 +48,11 @@ body {
 	transform: rotate(15deg);
 	/* Let’s see if we can catch anyone with this… one minute per step 😉
 	 * [Alas, this is bad for CPU usage—stupid WebKit/Blink.]
-	-webkit-animation: round-and-round 1920s steps(32, end) infinite;
-	animation: round-and-round 1920s steps(32, end) infinite; */
+	-webkit-animation: round-and-round 19s steps(32, end) infinite;
+	animation: round-and-round 19s steps(32, end) infinite;*/
 }
 
+/* commenting out for css validator (and because it's unused)
 @-webkit-keyframes round-and-round {
 	0% { -webkit-transform: rotate(15deg); }
 	100% { -webkit-transform: rotate(375deg); }
@@ -65,7 +63,7 @@ body {
 	100% { transform: rotate(375deg); }
 }
 
-/*@keyframes swirl {
+@keyframes swirl {
 	0% { transform: rotate(25deg); }
 	10% { transform: rotate(25deg); }
 	100% { transform: rotate(15deg); }
@@ -192,7 +190,7 @@ footer::before {
 footer {
 	font-size: 80%;
 	opacity: 0.8;
-	orphans: avoid;
+	orphans: 1; /* avoid is not recognised value */
 }
 
 @media screen and (max-width: 65em) {
