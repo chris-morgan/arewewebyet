@@ -79,13 +79,13 @@ h1 i {
 	font-weight: 500;
 }
 
-h1 + p {
+#main h1 + p {
 	margin: 0 0 1em;
 	color: #000;
 	font-size: 5rem;
 }
 
-h1 + p em {
+#main h1 + p em {
 	display: block;
 	font-size: 1.5rem;
 	font-weight: 300;

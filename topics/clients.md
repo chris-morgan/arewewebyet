@@ -1,6 +1,6 @@
 ---
 layout: topic
-name: "Clients"
+name: "HTTP/Web Clients"
 
 level: 3
 

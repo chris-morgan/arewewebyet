@@ -2,7 +2,10 @@
 layout: frame
 ---
 
-{{output}}
+<h1>{{page.title}}</h1>
 
+{{content}}
 
-{% include packages.html packages=page.packages %}
+{% if page.packages %}
+  {% include packages.html packages=page.packages %}
+{% endif %}

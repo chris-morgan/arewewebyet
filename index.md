@@ -1,6 +1,5 @@
 ---
-layout: frame
-show_ribbon: 1
+layout: main
 ---
 
 # Are we *web* yet?
