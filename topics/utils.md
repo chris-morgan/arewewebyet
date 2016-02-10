@@ -16,4 +16,5 @@ packages:
  - names
  - sass-rs
  - regex
+ - chrono
 ---
