@@ -2,7 +2,7 @@
 layout: topic
 title: "Compression Libs"
 
-level: 3
+level: 1
 
 packages:
  - flate2

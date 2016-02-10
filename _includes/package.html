@@ -1,7 +1,7 @@
 {% assign pkg=site.data.pkgs[include.name].crate %}
 
 {% if pkg %}
-<li class="pkg">
+<li id="pkg-{{pkg.id}}" class="pkg">
   <span class="pkg-name" title="est. {{pkg.created_at | date_to_string}}, last updated: {{pkg.updated_at | date_to_string}}">{{pkg.name}}</span>
 
   <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/{{pkg.id}}"><i class="fa fa-cube"></i></a>

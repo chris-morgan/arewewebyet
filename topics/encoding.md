@@ -2,7 +2,7 @@
 layout: topic
 title: "En- & Decoding"
 
-level: 3
+level: 1
 
 packages:
  - encoding

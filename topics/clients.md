@@ -2,7 +2,7 @@
 layout: topic
 title: "HTTP/Web Clients"
 
-level: 3
+level: 2
 
 packages:
  - hyper

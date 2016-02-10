@@ -1,0 +1,35 @@
+<span class="level-indicator level-{{include.level}}"
+
+  {% if include.level == 0 %}
+    title="perfect: stable, tested and mature"
+  {% elsif include.level == 1 %}
+    title="pretty great already"
+  {% elsif include.level == 2 %}
+    title="getting there, stable but still maturing"
+  {% elsif include.level == 3 %}
+    title="not yet stable, but progressing"
+  {% elsif include.level == 4 %}
+    title="unstable/incomplete, needs serious work"
+  {% elsif include.level == 5 %}
+    title="needs work"
+  {% else %}
+    title="basically non-existant"
+  {% endif %}
+
+>
+{% if include.level == 0 %}
+  <i class="fa fa-check-circle"></i>
+{% elsif include.level == 1 %}
+  <i class="fa fa-check-circle-o"></i>
+{% elsif include.level == 2 %}
+  <i class="fa fa-chevron-circle-up"></i>
+{% elsif include.level == 3 %}
+  <i class="fa fa-dot-circle-o"></i>
+{% elsif include.level == 4 %}
+  <i class="fa fa-dot-circle-o"></i>
+{% elsif include.level == 5 %}
+  <i class="fa fa-circle"></i>
+{% else %}
+  <i class="fa fa-times-circle"></i>
+{% endif %}
+</span>

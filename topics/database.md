@@ -2,7 +2,7 @@
 layout: topic
 title: "Database Support"
 
-level: 3
+level: 2
 
 drivers:
  - mysql

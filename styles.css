@@ -128,6 +128,53 @@ h1 i {
     margin: 10px 0 0 0;
 }
 
+.level-indicator {
+    font-weight: 300;
+    font-size: 0.65em;
+    vertical-align: middle;
+    color: white;
+}
+
+.level-indicator .fa {
+    color: #E4371B;
+}
+
+.level-indicator.level-0 .fa {
+    color: #04EC04;
+}
+
+.level-indicator.level-1 .fa {
+    color: #08C008;
+}
+
+.level-indicator.level-2 .fa {
+    color: #00ab00;
+}
+
+.level-indicator.level-3 .fa {
+    color: #026302;
+}
+
+.level-indicator.level-4 .fa {
+    color: #E4B71B;
+}
+
+.level-indicator.level-5 .fa {
+    color: #E4771B;
+}
+
+.topic-list {
+    list-style: none;
+    padding: 0;
+    display: inline;
+}
+
+.topic-list li {
+    display: inline-block;
+    padding: 5px;
+}
+
+
 footer::before {
 	content: "";
 	display: block;

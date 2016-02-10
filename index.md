@@ -5,7 +5,7 @@ layout: main
 # Are we *web* yet?
 
 **Getting there.**
-*(You can use Rust for web stuff, but the ecosystem isn’t mature yet.)*
+*(You can use Rust for web stuff, though the ecosystem isn’t mature yet – but it is improving quickly!)*
 
 
 ## The server story
@@ -13,7 +13,7 @@ layout: main
 These are the pieces we need before we’ll be ready for generally serious web development.
 
 
-### [Frameworks](/topics/frameworks.html)
+<h3>Frameworks {% include level.html level=3 %}</h3>
 
 (top 3)
 
@@ -24,7 +24,9 @@ These are the pieces we need before we’ll be ready for generally serious web d
     <li class="more"><a href="/topics/frameworks.html">see all</a></li>
   </ul>
 
-### [Database](/topics/database.html)
+<h3>Database Support {% include level.html level=3%}</h3>
+
+(top 2 each)
 
   <ul class="pkg-list">
     <li>Drivers
@@ -42,7 +44,7 @@ These are the pieces we need before we’ll be ready for generally serious web d
     <li class="more"><a href="/topics/database.html">list all</a></li>
   </ul>
 
-### Stack
+<h3>Stack {% include level.html level=2%}</h3>
 
   <ul class="pkg-list">
     <li>HTTP Servers
@@ -54,11 +56,24 @@ These are the pieces we need before we’ll be ready for generally serious web d
     <li class="more"><a href="/topics/stack.html">see all</a></li>
   </ul>
 
-### [Clients](/topics/clients.html)
+<h3>Clients {% include level.html level=2%}</h3>
+
+(top 2)
 
   <ul class="pkg-list">
     {% include package.html name='hyper' %}
     {% include package.html name='curl' %}
-    {% include package.html name='ease' %}
     <li class="more"><a href="/topics/clients.html">see all</a></li>
   </ul>
+
+### More
+
+learn more about the state of web developer in rust by topic:
+
+<ul class="topic-list">
+  {% for page in site.pages %}
+    {% if page.layout == 'topic' %}
+      <li><a href="{{page.url}}">{{page.title}}</a>  {% include level.html level=page.level%}</li>
+    {% endif %}
+  {% endfor %}
+</ul>
