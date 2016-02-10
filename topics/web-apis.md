@@ -27,6 +27,8 @@ packages:
  - keen
  - freegeoip
  - pusher
+ - slack-hook
+ - rusoto
 
 missing:
  - Facebook
