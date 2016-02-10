@@ -14,4 +14,6 @@ packages:
  - queryst
  - scgi
  - names
+ - sass-rs
+ - regex
 ---
