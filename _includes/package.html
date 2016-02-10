@@ -1,5 +1,6 @@
 {% assign pkg=site.data.pkgs[include.name].crate %}
 
+{% if pkg %}
 <li>
   {% if pkg.homepage %}
     <a class="pkg-name" href="{{pkg.homepage}}">{{pkg.name}}</a>
@@ -8,7 +9,10 @@
   {% endif %}
   <img src="https://img.shields.io/crates/v/{{pkg.id}}.svg" /> <img src="https://img.shields.io/crates/d/{{pkg.id}}.svg" />
   <p class="meta">{{pkg.created_at | date_to_string}} <a href="{{pkg.documentation}}">docs</a></p>
-
-  {{pkg.description | markdownify }}
-
+  <p>
+    {{pkg.description }}
+  </p>
 </li>
+{% else %}
+<h1>PACKAGE MISSING: {{include.name}}</h1>
+{% endif %}

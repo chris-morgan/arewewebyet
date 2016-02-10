@@ -26,6 +26,7 @@ packages:
  - wikipedia
  - keen
  - freegeoip
+ - pusher
 ---
 
 Connecting to the outside world is important, too many modern web applications are useless without an external party they connect to and interact with. This is an incomplete list of API(-wrapper)-Implementations in Rust:
