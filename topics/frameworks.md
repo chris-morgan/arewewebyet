@@ -10,4 +10,5 @@ packages:
  - nickel
  - rustful
  - rustless
+ - pencil
 ---
