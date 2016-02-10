@@ -5,10 +5,10 @@ title: "Crypto"
 level: 3
 
 suites:
- - rust-crypto
- - gpgme
- - libsodium-sys
  - openssl
+ - rust-crypto
+ - libsodium-sys
+ - gpgme
 
 rng:
  - rand
@@ -45,16 +45,19 @@ algorithms:
 
 tooling:
  - tempfile
+ - cookie
 
 ---
 
 
 <h2>Suites  {% include level.html level=2 %}</h2>
 
+<p><em>While openssl is the most popular suite, rust-crypto remains the only memory-safe option.</em></p>
+
 {% include packages.html packages=page.suites %}
 
 
-<h2>Random Number Generators  {% include level.html level=1 %}</h2>
+<h2>Random Number Generators  {% include level.html level=0 %}</h2>
 
 {% include packages.html packages=page.rng %}
 
@@ -66,9 +69,15 @@ tooling:
 
 <h2>TLS  {% include level.html level=3 %}</h2>
 
+<p><em>Still missing: a memory-safe TLS lib built in rust only</em></p>
+
 {% include packages.html packages=page.tls %}
 
+
+
 <h2>Tooling  {% include level.html level=4 %}</h2>
+
+<p><em>Tooling is great, just a little scarce...</em></p>
 
 {% include packages.html packages=page.tooling %}
 
