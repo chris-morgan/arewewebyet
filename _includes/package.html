@@ -1,16 +1,30 @@
 {% assign pkg=site.data.pkgs[include.name].crate %}
 
 {% if pkg %}
-<li>
+<li class="pkg">
+  <span class="pkg-name" title="est. {{pkg.created_at | date_to_string}}, last updated: {{pkg.updated_at | date_to_string}}">{{pkg.name}}</span>
+
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/{{pkg.id}}"><i class="fa fa-cube"></i></a>
+
   {% if pkg.homepage %}
-    <a class="pkg-name" href="{{pkg.homepage}}">{{pkg.name}}</a>
-  {% else %}
-    <span  class="pkg-name">{{pkg.name}}</span>
+   <a class="pkg-link" title="homepage" href="{{pkg.homepage}}"><i class="fa fa-home"></i></a>
   {% endif %}
-  <img src="https://img.shields.io/crates/v/{{pkg.id}}.svg" /> <img src="https://img.shields.io/crates/d/{{pkg.id}}.svg" />
-  <p class="meta">{{pkg.created_at | date_to_string}} <a href="{{pkg.documentation}}">docs</a></p>
-  <p>
-    {{pkg.description }}
+
+  {% if pkg.documentation %}
+   <a class="pkg-link" title="documentation" href="{{pkg.documentation}}"><i class="fa fa-book"></i></a>
+  {% endif %}
+
+  {% if pkg.repository %}
+   <a class="pkg-link" title="repository" href="{{pkg.repository}}"><i class="fa fa-code"></i></a>
+  {% endif %}
+
+
+
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/{{pkg.id}}.svg" /> <img src="https://img.shields.io/crates/d/{{pkg.id}}.svg" />
+  </p>
+  <p class="pkg-desc">
+      {{pkg.description }}
   </p>
 </li>
 {% else %}

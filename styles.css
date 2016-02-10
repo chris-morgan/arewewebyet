@@ -91,6 +91,35 @@ h1 i {
 	font-weight: 300;
 }
 
+.pkg-list {
+  list-style: none;
+}
+
+.pkg-name {
+  margin-top: 2em;
+  margin-right: 0.35em;
+  font-weight: 400;
+}
+
+.pkg-meta {
+  margin: 0;
+}
+
+.pkg-desc {
+  font-size: 0.9em;
+  margin: 0.1em 0 2em 0;
+}
+
+.pkg-link {
+  font-size: 0.75em;
+  opacity: 0.5;
+  vertical-align: middle;
+}
+
+.pkg-link:hover {
+  opacity: 0.8;
+}
+
 
 .meta {
     font-size: 0.6em;

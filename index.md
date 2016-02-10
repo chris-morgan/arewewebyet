@@ -17,7 +17,7 @@ These are the pieces we need before we’ll be ready for generally serious web d
 
 (top 3)
 
-  <ul>
+  <ul class="pkg-list">
     {% include package.html name='iron' %}
     {% include package.html name='conduit' %}
     {% include package.html name='nickel' %}
@@ -26,15 +26,15 @@ These are the pieces we need before we’ll be ready for generally serious web d
 
 ### [Database](/topics/database.html)
 
-  <ul>
+  <ul class="pkg-list">
     <li>Drivers
-      <ul>
+      <ul class="pkg-list">
         {% include package.html name='postgres' %}
         {% include package.html name='redis' %}
       </ul>
     </li>
     <li>ORMs
-      <ul>
+      <ul class="pkg-list">
         {% include package.html name='diesel' %}
         {% include package.html name='rustorm' %}
       </ul>
@@ -44,9 +44,9 @@ These are the pieces we need before we’ll be ready for generally serious web d
 
 ### Stack
 
-  <ul>
+  <ul class="pkg-list">
     <li>HTTP Servers
-      <ul>
+      <ul class="pkg-list">
         {% include package.html name='hyper' %}
         {% include package.html name='tiny-http' %}
       </ul>
@@ -56,7 +56,7 @@ These are the pieces we need before we’ll be ready for generally serious web d
 
 ### [Clients](/topics/clients.html)
 
-  <ul>
+  <ul class="pkg-list">
     {% include package.html name='hyper' %}
     {% include package.html name='curl' %}
     {% include package.html name='ease' %}
