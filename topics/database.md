@@ -10,13 +10,15 @@ drivers:
  - redis
  - rusqlite
  - leveldb
+ - cql_bindgen
  - rocksdb
  - firebase
  - couchdb
  - etcd
  - influent
- - mongo_driver
  - mongodb
+ - cassandra
+ - mongo_driver
 
 orms:
  - rustorm
