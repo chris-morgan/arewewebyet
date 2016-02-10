@@ -9,3 +9,21 @@ layout: frame
 {% if page.packages %}
   {% include packages.html packages=page.packages %}
 {% endif %}
+
+{% if page.missing %}
+  <h2>Still missing...</h2>
+  <ul>
+    {% for missed in page.missing %}
+      <li> {{missed}} </li>
+    {% endfor %}
+    <li>
+      and probably some others...
+    </li>
+  </ul>
+{% endif %}
+
+<div class="alert-box">
+  <h3>Do you know something we don't?</h3>
+  <p>Did we miss an important crate? Or maybe you just recently launched something that should be listed here, too? <a href="https://github.com/bashyHQ/arewewebyet/issues/new" target="_blank">Let us know</a>!
+  </p>
+</div>

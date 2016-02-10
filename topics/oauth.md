@@ -8,4 +8,7 @@ packages:
  - oauth-client
  - inth-oauth2
  - yup-oauth2
+
+missing:
+ - OAuth-Provider Support
 ---
