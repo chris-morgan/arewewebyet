@@ -18,6 +18,11 @@ websocket:
  - websocket-stream
  - rustic-io
 
+protocols:
+ - crust
+ - ftp
+ - fastcgi
+
 ---
 
 ## HTTP Servers
@@ -31,3 +36,8 @@ websocket:
 ## Websocket
 
 {% include packages.html packages=page.websocket %}
+
+
+## Other protocols
+
+{% include packages.html packages=page.protocols %}
