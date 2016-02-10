@@ -1,12 +1,5 @@
 {% assign pkg=site.data.pkgs[include.name].crate %}
 
-{% if include.pkg %}
-{% assign pkg=include.pkg.crate %}
-{% endif %}
-{% if include.crate %}
-{% assign pkg=include.crate %}
-{% endif %}
-
 <li>
   {% if pkg.homepage %}
     <a class="pkg-name" href="{{pkg.homepage}}">{{pkg.name}}</a>
