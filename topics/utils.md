@@ -13,4 +13,5 @@ packages:
  - bodyparser
  - queryst
  - scgi
+ - names
 ---
