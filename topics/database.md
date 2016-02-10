@@ -33,14 +33,14 @@ tools:
 
 Proper Database support is crucial for modern web development. This page gives an overview of the various drivers, ORMs, integrations and tools.
 
-## Drivers
+<h2>Drivers  {% include level.html level=2 %}</h2>
 
 {% include packages.html packages=page.drivers %}
 
-## ORMs
+<h2>ORMs  {% include level.html level=4 %}</h2>
 
 {% include packages.html packages=page.orms %}
 
-## Tooling
+<h2>Tooling  {% include level.html level=5 %}</h2>
 
 {% include packages.html packages=page.tools %}
