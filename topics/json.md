@@ -8,4 +8,5 @@ packages:
  - json_macros
  - jsonway
  - weakjson
+ - jsonrpc
 ---
