@@ -11,6 +11,7 @@ queues:
  - disqrust
  - disque
  - ferrous_threads
+ - kafka
 
 search:
  - rs-es
