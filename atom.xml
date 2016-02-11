@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Are we web yet?</title>
-    <link href="http://arewewebyet.com/atom.xml" rel="self" />
-    <link href="http://arewewebyet.com/"/>
-    <updated>2014-05-28T15:00:00Z</updated>
-    <id>http://arewewebyet.com/atom.xml</id>
+    <link href="http://arewewebyet.org/atom.xml" rel="self" />
+    <link href="http://arewewebyet.org/"/>
+    <updated>2016-02-11T00:00:00Z</updated>
+    <id>http://arewewebyet.org/atom.xml</id>
     <entry>
-        <title>Getting there.</title>
-        <author><name>Chris Morgan</name></author>
-		<link href="http://arewewebyet.com/"/>
-        <updated>2015-05-08T00:00:00Z</updated>
-        <published>2015-05-08T00:00:00Z</published>
-        <id>http://arewewebyet.com/#getting-there</id>
-        <content>You can use Rust for web stuff, but the ecosystem isn’t mature yet.</content>
+        <title>You can built stuff.</title>
+        <author><name>Bashy.io</name></author>
+		<link href="http://arewewebyet.org/"/>
+        <updated>2016-02-11T00:00:00Z</updated>
+        <published>2016-02-11T00:00:00Z</published>
+        <id>http://arewewebyet.org/#you-can-build-stuff</id>
+        <content><![CDATA[<p>Rust has a mature <a href="/topics/stack.html">HTTP stack</a>{% include level.html level=2%} and various <a href="/topics/frameworks.html">frameworks</a>{% include level.html level=3 %} enable you to build APIs and backend services quickly. While increasingly more <a href="/topics/database.html#drivers">databases drivers</a>{% include level.html level=2 %} become available, <a href="/topics/database.html#orms">ORMs</a>{% include level.html level=5 %} and connections to <a href="/topics/services.html">external services</a>{% include level.html level=5 %} (like search or worker queues) are still scarce. Looking farther, it doesn't necessarily get better. Though there is significant support for base needs (like <a href="/topics/compression.html">data compression</a>{% include level.html level=2 %} or <a href="/topics/logging.html">logging</a>{% include level.html level=2 %}), a lot more web-specific needs are still unmet and immature.</p>]]></content>
     </entry>
 </feed>
