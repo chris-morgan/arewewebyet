@@ -35,6 +35,7 @@ h1, h2, h3, h4, h5, h6, strong {
 	max-width: 40em;
 	padding: 2em 4em;
 	margin: 0 auto;
+  min-height: 600px
 }
 
 .content:before {
@@ -44,6 +45,7 @@ h1, h2, h3, h4, h5, h6, strong {
   right: 0;
   z-index: -1;
   height: 1050px;
+  max-height: 100%;
   display: block;
   content: " ";
   background-image: linear-gradient(to bottom, rgba(250,250,250,0.6), transparent);
