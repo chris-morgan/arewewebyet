@@ -12,6 +12,11 @@
 	overflow-x: hidden;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 header {
 	line-height: 2;
 }
@@ -26,7 +31,7 @@ h1, h2, h3, h4, h5, h6, strong {
 	}
 }
 
-body {
+.content {
 	max-width: 40em;
 	padding: 2em 4em;
 	margin: 0 auto;
@@ -182,19 +187,13 @@ h1 i {
     background: #fefce7;
 }
 
-footer::before {
-	content: "";
-	display: block;
-	margin: 6em auto 4em auto;
-	width: 50%;
-	border-top: 1px solid #cba;
-}
-
 
 footer {
 	font-size: 80%;
-	opacity: 0.8;
-	orphans: 1; /* avoid is not recognised value */
+  background-color: #FAFAFA;
+	border-top: 1px solid #cba;
+  margin-top: 5em;
+  padding: 1em 4em 2em 4em;
 }
 
 @media screen and (max-width: 65em) {
