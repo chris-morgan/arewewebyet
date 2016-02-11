@@ -22,4 +22,4 @@ This project is managed under an adapted [Contributer Convenant](http://contribu
 
 The project and all its work is published under the Creative Commons Attribution License (International). To learn more about the conditions of that License, please refer to the [LICENSE](LICENSE) document in this folder.
 
-The original work this project is largely inspired by, was done and published by [Chris Morgan](https://github.com/chris-morgan) under the Creative Commons Attribution License (his link suggests, version 3.0). 
+The original work this project is largely inspired by, was done and published by [Chris Morgan](https://github.com/chris-morgan) under the Creative Commons Attribution License (his link suggests, version 3.0).
