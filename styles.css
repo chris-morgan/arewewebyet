@@ -37,6 +37,18 @@ h1, h2, h3, h4, h5, h6, strong {
 	margin: 0 auto;
 }
 
+.content:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 1050px;
+  display: block;
+  content: " ";
+  background-image: linear-gradient(to bottom, rgba(250,250,250,0.6), transparent);
+}
+
 a, a:visited {
   color: #428bca;
 }
@@ -53,7 +65,7 @@ a:hover {
 	width: 512px;
 	height: 512px;
 	opacity: 0.25;
-	z-index: -1;
+	z-index: -2;
 	display: block;
 	-webkit-transform: rotate(35deg);
 	transform: rotate(35deg);
@@ -66,7 +78,7 @@ h1 {
 	font-weight: 300;
 }
 
-h1, h1 + p {
+#main h1, #main h1 + p {
 	text-shadow: 0 0 1px #e0e0da,
 				 0 0 1px #e0e0da,
 				 0 0 2px #e0e0da,
@@ -78,7 +90,7 @@ h1, h1 + p {
 				 0 0 5rem #e0e0da;
 }
 
-h1 i {
+#main h1 i {
 	color: #333;
 	font-style: normal;
 	font-weight: 500;
@@ -95,6 +107,8 @@ h1 i {
 	font-size: 1.5rem;
 	font-weight: 300;
 }
+
+
 
 .pkg-list {
   list-style: none;
