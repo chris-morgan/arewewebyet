@@ -112,6 +112,7 @@ h1 {
 
 .pkg-list {
   list-style: none;
+  padding: 0 0 0 0.5em;
 }
 
 .pkg-name {
