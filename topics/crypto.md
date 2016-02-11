@@ -12,8 +12,8 @@ suites:
 
 rng:
  - rand
- - random
  - uuid
+ - random
 
 passwords:
   - bcrypt
