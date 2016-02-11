@@ -204,11 +204,45 @@ h1 {
 
 
 footer {
-	font-size: 80%;
+	font-size: 0.6em;
   background-color: #FAFAFA;
 	border-top: 1px solid #cba;
   margin-top: 5em;
-  padding: 1em 4em 2em 4em;
+  padding: 1em 4em 0.5em 4em;
+}
+
+
+.devider {
+  display: flex;
+}
+.logo {
+  text-align: center;
+  flex-grow: 1;
+}
+.links {
+  flex-grow: 2;
+  padding-top: 1.75em;
+}
+.call-to-action {
+  flex-grow: 4;
+}
+.last-updated {
+  text-align: center;
+  font-size: 0.8em;
+  margin-bottom: 0;
+}
+.logo img {
+  height: 5em;
+}
+.pages {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+.pages li {
+  line-height: 2em;
+  display: inline-block;
+  margin: 0 2em;
 }
 
 @media screen and (max-width: 65em) {
