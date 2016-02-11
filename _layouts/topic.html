@@ -2,7 +2,16 @@
 layout: frame
 ---
 
+<div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+    <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div>
+
 <h1>{{page.title}}  {% include level.html level=page.level%}</h1>
+
 
 {% if page.intro %}
   {{page.intro | markdownify }}
