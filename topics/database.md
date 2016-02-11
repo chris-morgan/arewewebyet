@@ -4,6 +4,9 @@ title: "Database Support"
 
 level: 2
 
+intro: Proper Database support is crucial for modern web development. This page gives an overview of the various drivers, ORMs, integrations and tools.
+
+
 drivers:
  - mysql
  - postgres
@@ -32,8 +35,6 @@ tools:
 
 
 ---
-
-Proper Database support is crucial for modern web development. This page gives an overview of the various drivers, ORMs, integrations and tools.
 
 <h2>Drivers  {% include level.html level=2 %}</h2>
 

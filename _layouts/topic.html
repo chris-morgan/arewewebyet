@@ -4,6 +4,10 @@ layout: frame
 
 <h1>{{page.title}}  {% include level.html level=page.level%}</h1>
 
+{% if page.intro %}
+  {{page.intro | markdownify }}
+{% endif %}
+
 {{content}}
 
 {% if page.packages %}
