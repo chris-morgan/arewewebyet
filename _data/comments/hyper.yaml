@@ -1,0 +1,10 @@
+- author: ben
+  date: 2016/02/11
+  version: 0.7.2
+  type: note
+  text: Doesn't support HTTP2
+- author: manishearth
+  date: 2016/02/10
+  version: 0.7.2
+  type: recommendation
+  text: I don't see hyper having major breaking changes in the forseeable future and is pretty usable/ready.

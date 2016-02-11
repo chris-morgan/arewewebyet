@@ -297,6 +297,114 @@ footer {
     right: 0px;
 }
 
+
+.review {
+  border-left: #eee 0.34em solid;
+  padding-left: 1em;
+  font-size: 0.65em;
+  font-weight: 300;
+  margin-left: 2em;
+}
+
+.review.positive, .review.recommendation  {
+  border-color: #d0e9c3;
+}
+
+.review.note {
+  border-color: rgba(66, 139, 202, 0.36);
+}
+
+.review.warning {
+  border-color: #E4B71B;
+}
+
+.review.negative {
+  border-color: #E4771B;
+}
+
+.review.terrible {
+  border-color: #E4371B;
+}
+
+
+.review:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+cite {
+  font-size: 0.75em;
+  position: relative;
+  padding-left: 5em;
+  display: inline-block;
+}
+
+cite:before {
+  content: "—";
+  font-size: 2em;
+  font-style: italic;
+  font-weight: 300;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 1em;
+}
+cite img {
+  height: 2em;
+  vertical-align: middle;
+  margin: 0.25em 1em 0.25em 0;
+  border-radius: 50%;
+  border: 1px solid #eee;
+}
+
+.review .name {
+  font-size: 1.2em;
+  font-weight: 400;
+  display: inline;
+}
+
+.review p.info {
+  margin: 0;
+}
+.review .version {
+  font-weight: 400;
+}
+.review p {
+  margin: 1em 0 0.5em;
+}
+
+
+li.pkg {
+  margin-top: 1.5em;
+}
+
+.action {
+  opacity: 0;
+  transition: 0.25s;
+}
+
+*:hover > .action {
+  opacity: 1;
+  transition: 1s;
+}
+
+summary {
+  font-size: 0.8em;
+  opacity: 0.95;
+  cursor: pointer;
+}
+
+summary .action {
+  font-size: 0.8em;
+  vertical-align: middle;
+}
+
+detail {
+  display: none;
+}
+
+
 @media screen and (max-width: 65em) {
 	:root::before { opacity: 0.65; }
 }

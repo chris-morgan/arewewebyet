@@ -26,6 +26,12 @@
   <p class="pkg-desc">
       {{pkg.description }}
   </p>
+  {% unless include.omit_comments %}
+    {% assign comments=site.data.comments[pkg.id] %}
+    {% if comments %}
+      {% include comments.html comments=comments %}
+    {% endif %}
+  {% endunless %}
 </li>
 {% else %}
 <h1>PACKAGE MISSING: {{include.name}}</h1>

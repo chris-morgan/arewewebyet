@@ -18,9 +18,9 @@ These are the pieces we need before we’ll be ready for generally serious web d
 (top 3)
 
   <ul class="pkg-list">
-    {% include package.html name='iron' %}
-    {% include package.html name='conduit' %}
-    {% include package.html name='nickel' %}
+    {% include package.html name='iron' omit_comments=1 %}
+    {% include package.html name='conduit' omit_comments=1 %}
+    {% include package.html name='nickel' omit_comments=1 %}
     <li class="more"><a href="/topics/frameworks.html">see all</a></li>
   </ul>
 
@@ -31,14 +31,14 @@ These are the pieces we need before we’ll be ready for generally serious web d
   <ul class="pkg-list">
     <li>Drivers
       <ul class="pkg-list">
-        {% include package.html name='postgres' %}
-        {% include package.html name='redis' %}
+        {% include package.html name='postgres' omit_comments=1 %}
+        {% include package.html name='redis' omit_comments=1 %}
       </ul>
     </li>
     <li>ORMs
       <ul class="pkg-list">
-        {% include package.html name='diesel' %}
-        {% include package.html name='rustorm' %}
+        {% include package.html name='diesel' omit_comments=1 %}
+        {% include package.html name='rustorm' omit_comments=1 %}
       </ul>
     </li>
     <li class="more"><a href="/topics/database.html">list all</a></li>
@@ -49,8 +49,8 @@ These are the pieces we need before we’ll be ready for generally serious web d
   <ul class="pkg-list">
     <li>HTTP Servers
       <ul class="pkg-list">
-        {% include package.html name='hyper' %}
-        {% include package.html name='tiny-http' %}
+        {% include package.html name='hyper' omit_comments=1 %}
+        {% include package.html name='tiny-http' omit_comments=1 %}
       </ul>
     </li>
     <li class="more"><a href="/topics/stack.html">see all</a></li>
@@ -61,8 +61,8 @@ These are the pieces we need before we’ll be ready for generally serious web d
 (top 2)
 
   <ul class="pkg-list">
-    {% include package.html name='hyper' %}
-    {% include package.html name='curl' %}
+    {% include package.html name='hyper' omit_comments=1 %}
+    {% include package.html name='curl' omit_comments=1 %}
     <li class="more"><a href="/topics/clients.html">see all</a></li>
   </ul>
 

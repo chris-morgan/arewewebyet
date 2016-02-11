@@ -1,0 +1,28 @@
+ben:
+  name: Benjamin Kampmann
+  curator: true
+  img:
+  bio:
+  twitter: SirDonQui
+  homepage: http://www.create-build-execute.com
+
+manishearth:
+  name: Manish Goregaokar
+  img: https://www.gravatar.com/avatar/0a3069491bfded90cdf623341cadc1d1?s=128&amp;d=identicon&amp;r=PG&amp;s=50
+  bio: >
+    I’m a fourth year physics student studying at IIT Bombay. In my spare time I do a lot of programming, often open source, and participate in communities like Stack Exchange.
+
+    These days I contribute to the [Servo browser engine](http://github.com/servo/servo) and occasionally to the [Rust programming language](http://github.com/rust-lang/rust)
+  twitter: Manishearth
+  github: manishearth
+  homepage: "http://manishearth.github.io/"
+
+steve:
+  name: Steve Klabnik
+
+
+flosse:
+  name: flosse
+  curator: false
+  img: "https://avatars1.githubusercontent.com/u/276043?v=3&s=460"
+  homepage: "https://github.com/flosse"

@@ -1,0 +1,8 @@
+<summary onClick="return toggleComments(this);" class="comments-title">
+  <i class="fa fa-comment-o"></i> {{include.comments|size}} Comments <span class="action">click to toggle</span>
+</summary>
+<detail class="comment-list">
+  {% for comment in include.comments %}
+    {% include comment.html comment=comment %}
+  {% endfor %}
+</detail>
