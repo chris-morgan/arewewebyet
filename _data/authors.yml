@@ -31,7 +31,13 @@ steve:
   bio: Hi, I'm Steve! I enjoy turning coffee into code, writing, philosophy, and physical activity. This is my own little corner of the internets. Enjoy!
 
 
+
+# The following aren't in the system but externals
 flosse:
   name: flosse
   img: "https://avatars1.githubusercontent.com/u/276043?v=3&s=460"
   homepage: "https://github.com/flosse"
+
+mattgreenrocks:
+  name: mattgreenrocks
+  img: https://secure.gravatar.com/avatar/7e01d0a8ef8d90e1c5195f27b34ae999?r=pg&d=identicon&s=100
