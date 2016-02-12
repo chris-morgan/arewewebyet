@@ -299,12 +299,19 @@ footer {
 }
 
 
-.review {
+blockquote {
   border-left: #eee 0.34em solid;
   padding-left: 1em;
-  font-size: 0.65em;
   font-weight: 300;
   margin-left: 2em;
+}
+
+cite {
+  font-size: 0.75em;
+}
+
+.review {
+  font-size: 0.65em;
 }
 
 .review.positive, .review.recommendation  {
@@ -334,14 +341,13 @@ footer {
   display: table;
 }
 
-cite {
-  font-size: 0.75em;
+.review cite {
   position: relative;
   padding-left: 5em;
   display: inline-block;
 }
 
-cite:before {
+.review cite:before {
   content: "—";
   font-size: 2em;
   font-style: italic;
@@ -351,7 +357,7 @@ cite:before {
   transform: translate(0, -50%);
   left: 1em;
 }
-cite img {
+.review cite img {
   height: 2em;
   vertical-align: middle;
   margin: 0.25em 1em 0.25em 0;
