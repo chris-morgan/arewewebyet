@@ -10,4 +10,6 @@ packages:
  - atom_syndication
  - feedreader
  - redox
+
+news_tag: syndication
 ---

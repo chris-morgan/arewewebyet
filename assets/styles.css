@@ -411,6 +411,16 @@ detail {
   display: none;
 }
 
+.related-news {
+  list-style: "» ";
+  font-size: 0.8em;
+}
+
+.news-item .date {
+  font-size: 0.8em;
+  margin-right: 0.51em;
+}
+
 
 @media screen and (max-width: 65em) {
 	:root::before { opacity: 0.65; }

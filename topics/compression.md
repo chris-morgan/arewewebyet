@@ -10,4 +10,6 @@ packages:
  - tar
  - inflate
  - bzip2
+
+news_tag: compression
 ---

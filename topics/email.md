@@ -11,4 +11,6 @@ packages:
  - pop3
  - imap
  - lettre
+
+news_tag: email
 ---

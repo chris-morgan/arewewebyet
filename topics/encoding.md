@@ -12,4 +12,6 @@ packages:
  - http2parse
  - nue-io
  - hpack
+
+news_tag: encoding
 ---

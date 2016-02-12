@@ -11,4 +11,6 @@ packages:
  - cereal
  - hipack
  - weakjson
+
+news_tag: serialiser
 ---

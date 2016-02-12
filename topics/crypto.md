@@ -47,6 +47,7 @@ tooling:
  - tempfile
  - cookie
 
+news_tag: crypto
 ---
 
 

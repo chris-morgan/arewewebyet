@@ -11,4 +11,6 @@ packages:
 
 missing:
  - OAuth-Provider Support
+
+news_tag: oauth
 ---

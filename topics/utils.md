@@ -17,4 +17,8 @@ packages:
  - sass-rs
  - regex
  - chrono
+ - time
+ - backtrace
+
+news_tag: utils
 ---

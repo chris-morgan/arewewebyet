@@ -9,4 +9,6 @@ packages:
  - jsonway
  - weakjson
  - jsonrpc
+
+news_tag: json
 ---

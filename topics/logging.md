@@ -11,4 +11,6 @@ packages:
  - syslog
  - json_logger
  - raven
+
+news_tag: logging
 ---

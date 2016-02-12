@@ -34,6 +34,7 @@ tools:
  - dbmigrate
 
 
+news_tag: database
 ---
 
 <h2 id="drivers">Drivers  {% include level.html level=2 %}</h2>

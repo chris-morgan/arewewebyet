@@ -11,4 +11,6 @@ packages:
  - rustful
  - rustless
  - pencil
+
+news_tag: frameworks
 ---

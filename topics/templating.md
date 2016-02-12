@@ -11,4 +11,6 @@ packages:
  - dtl
  - rustache
  - twig
+
+news_tag: templating
 ---

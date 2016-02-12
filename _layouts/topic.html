@@ -35,6 +35,17 @@ layout: frame
   </ul>
 {% endif %}
 
+{% if page.news_tag %}
+  {% if site.tags[page.news_tag] %}
+    <h3>Related News</h3>
+    <ul class="related-news">
+      {% for post in site.tags[page.news_tag] | limit:3 %}
+        {% include news_item.html post=post %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endif %}
+
 <div class="alert-box">
   <h3>Do you know something we don't?</h3>
   <p>Did we miss an important crate? Or maybe you just recently launched something that should be listed here, too? <a href="https://github.com/bashyHQ/arewewebyet/issues/new" target="_blank">Let us know</a>!

@@ -23,6 +23,8 @@ protocols:
  - ftp
  - fastcgi
 
+news_tag: stack
+
 ---
 
 ## HTTP Servers

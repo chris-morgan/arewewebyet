@@ -4,10 +4,8 @@ title: "Latest News"
 permalink: /news/
 ---
 
-<ul>
+<ul class="related-news">
   {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
+    {% include news_item.html post=post %}
   {% endfor %}
 </ul>
