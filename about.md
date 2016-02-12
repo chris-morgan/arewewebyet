@@ -36,6 +36,8 @@ Each comment features the author, when it was written and what version they were
 
 Next to the text itself the side-bar is color coded, where blue and grey indicate informational content, green a positive review or even recommendation, yellow an warning and red an important problem or blocker.
 
+You can also toggle all comments with the little switch on the top right on each topic page. The setting will be saved in your browser and applied on every page load.
+
 ### Understanding the level indicator
 
 Throughout the app – mostly on section titles – you find the small `level indicators`: a colored glyph, which should give you a hint on the maturity of the subject overall as designated by the [curators](/curators/). The following indicators are available:
