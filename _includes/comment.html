@@ -5,7 +5,9 @@
   <cite>
     <p>
       <img src="{{author.img|default:'/asset/bashy-big.svg'}}">
-      <a {% if author.curator %}
+      <a {% if cmt.source_link %}
+          href="{{cmt.source_link}}"
+        {% elsif author.curator %}
           href="/curators/#{{cmt.author}}"
         {% else %}
           href="{{author.homepage}}"
