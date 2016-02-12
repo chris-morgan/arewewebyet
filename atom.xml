@@ -1,17 +1,33 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Are we web yet?</title>
     <link href="http://arewewebyet.org/atom.xml" rel="self" />
     <link href="http://arewewebyet.org/"/>
-    <updated>2016-02-11T00:00:00Z</updated>
+    <updated>{{ site.time | date_to_rfc822 }}</updated>
     <id>http://arewewebyet.org/atom.xml</id>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
     <entry>
         <title>You can built stuff.</title>
         <author><name>Bashy.io</name></author>
-		<link href="http://arewewebyet.org/"/>
-        <updated>2016-02-11T00:00:00Z</updated>
+		    <link href="http://arewewebyet.org/"/>
+        <updated>{{ site.time | date_to_rfc822 }}</updated>
         <published>2016-02-11T00:00:00Z</published>
         <id>http://arewewebyet.org/#you-can-build-stuff</id>
         <content><![CDATA[<p>Rust has a mature <a href="/topics/stack.html">HTTP stack</a>{% include level.html level=2%} and various <a href="/topics/frameworks.html">frameworks</a>{% include level.html level=3 %} enable you to build APIs and backend services quickly. While increasingly more <a href="/topics/database.html#drivers">databases drivers</a>{% include level.html level=2 %} become available, <a href="/topics/database.html#orms">ORMs</a>{% include level.html level=5 %} and connections to <a href="/topics/services.html">external services</a>{% include level.html level=5 %} (like search or worker queues) are still scarce. Looking farther, it doesn't necessarily get better. Though there is significant support for base needs (like <a href="/topics/compression.html">data compression</a>{% include level.html level=2 %} or <a href="/topics/logging.html">logging</a>{% include level.html level=2 %}), a lot more web-specific needs are still unmet and immature.</p>]]></content>
     </entry>
+    {% for post in site.posts | slimit:20 %}
+      <entry>
+        <title>{{ post.title | xml_escape }}</title>
+        <content>{{ post.content | xml_escape }}</content>
+        <published>{{ post.date | date_to_rfc822 }}</published>
+        <link href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" />
+        {% for tag in post.tags %}
+        <category>{{ tag | xml_escape }}</category>
+        {% endfor %}
+      </entry>
+    {% endfor %}
+
 </feed>
