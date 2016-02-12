@@ -448,6 +448,32 @@ detail {
   font-style: italic;
 }
 
+.avatar {
+    height: 10em;
+    margin: 0.5em;
+    border-radius: 50%;
+    border: 2px #eee solid;
+    float: left;
+}
+
+.author {
+  margin: 2em 0;
+}
+
+.author:not(:last-child):after {
+  content: " ";
+  border-bottom: 2px #eee solid;
+  width: 50%;
+}
+
+.author:nth-child(2n) .avatar {
+  float: right;
+}
+
+.social-media {
+    margin: 0 0 1em 0;
+}
+
 
 @media screen and (max-width: 65em) {
 	:root::before { opacity: 0.65; }

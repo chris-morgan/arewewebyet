@@ -1,4 +1,3 @@
-
 {% assign author = site.data.authors[include.author] %}
 
 <div class="author">
@@ -6,11 +5,11 @@
     <a href="/curators/#{{include.author}}">
   {% endif %}
 
-    <img src="{{author.img | default: '/asset/bashy-big.svg'}}" />
+    <img class="avatar" src="{{author.img | default: '/asset/bashy-big.svg'}}" />
     <span class="name">{{author.name}}</span>
-    <p class="social media">
-      {% if author.home %}
-        <a href="{{author.home}}" target="_blank"><i class="fa fa-home"></i></a>
+    <p class="social-media">
+      {% if author.homepage %}
+        <a href="{{author.homepage}}" target="_blank"><i class="fa fa-home"></i></a>
       {% endif %}
 
       {% if author.github %}
