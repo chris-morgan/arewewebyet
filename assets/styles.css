@@ -80,6 +80,7 @@ h1 {
 	font-weight: 300;
 }
 
+/*
 #main h1, #main h1 + p {
 	text-shadow: 0 0 1px #e0e0da,
 				 0 0 1px #e0e0da,
@@ -90,7 +91,7 @@ h1 {
 				 0 0 3rem #e0e0da,
 				 0 0 4rem #e0e0da,
 				 0 0 5rem #e0e0da;
-}
+}*/
 
 #main h1 i {
 	color: #333;
