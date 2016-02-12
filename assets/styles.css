@@ -421,6 +421,33 @@ detail {
   margin-right: 0.51em;
 }
 
+.news h1 {
+  font-size: 2em;
+}
+
+.news h1::before {
+    content: " News » ";
+    display: inline-block;
+    font-size: 0.35em;
+    color: white;
+    background: #666;
+    padding: 0.25em 0.75em;
+    margin-right: 1em;
+    vertical-align: middle;
+}
+
+.news .meta ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.news .meta ul li {
+  display: inline-block;
+  font-style: italic;
+}
+
 
 @media screen and (max-width: 65em) {
 	:root::before { opacity: 0.65; }

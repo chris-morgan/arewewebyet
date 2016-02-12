@@ -32,3 +32,11 @@ learn more about the state of web developer in rust by topic:
     {% endif %}
   {% endfor %}
 </ul>
+
+<h3> Latest News <a href="/atom.xml" title="subscribe"><i class="fa fa-rss-square"></i></a></h3>
+
+<ul class="related-news">
+  {% for post in site.posts | limit:5 %}
+    {% include news_item.html post=post %}
+  {% endfor %}
+</ul>
