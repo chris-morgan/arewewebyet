@@ -27,7 +27,7 @@ layout: frame
   <h3>Still missing...</h3>
   <ul>
     {% for missed in page.missing %}
-      <li> {{missed}} </li>
+      <li> {{missed | markdownify }} </li>
     {% endfor %}
     <li>
       and probably some others...
