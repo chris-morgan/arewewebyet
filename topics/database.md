@@ -27,6 +27,7 @@ orms:
  - rustorm
  - diesel
  - codegenta
+ - tql
 
 tools:
  - schemamama
