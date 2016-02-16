@@ -1,1 +1,10 @@
 permalink: /news/:year/:month/:day/:title/
+safe: true
+lsi: false
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+gems:
+  - github-pages

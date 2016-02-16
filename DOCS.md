@@ -6,10 +6,16 @@ This document outlines the technologies used, the structure of the project and d
 
 This project is hosted on github pages and uses the default [Jekyll](http://www.jekyll.rb) setup to do that. Jekyll is a static website compiler – it uses our data to render a bunch of HTML pages out of it. If you do not have jekyll yet, you can install it by using bundler (`bundler install jekyll`) or any other way [outlined on the official website](http://jekyllrb.com/docs/installation/).
 
+To install the latest version as rendered by github pages, please use bundle:
+
+```bash
+bundle install
+```
+
 To compile the documents run from the main directory
 
 ```bash
- jekyll serve
+bundle exec jekyll serve
 ```
 
 Now open a browser on `http://localhost:4000` and you'll be able to see the homepage in its latest version. Any changes you make immediately rerender the websites after saving the file, you just need to refresh the browser. Note: for changes done to the `_config.yml` you need to restart `jekyll`.
