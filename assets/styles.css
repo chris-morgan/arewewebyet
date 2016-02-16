@@ -1,4 +1,22 @@
-@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,500,500italic);
+@font-face {
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Fira Sans Light'), url("./fonts/FiraSans-Light.woff") format('woff');
+}
+@font-face {
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Fira Sans'), url("./fonts/FiraSans-Regular.woff") format('woff');
+}
+@font-face {
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Fira Sans Medium'), url("./fonts/FiraSans-Medium.woff") format('woff');
+}
+
 
 :root {
 	font-family: Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
