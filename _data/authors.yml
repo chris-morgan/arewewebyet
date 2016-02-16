@@ -13,6 +13,7 @@ ben:
 
 manishearth:
   name: Manish Goregaokar
+  curator: true
   img: https://www.gravatar.com/avatar/0a3069491bfded90cdf623341cadc1d1?s=512&amp;d=identicon&amp;r=PG&amp;s=50
   bio: >
     I’m a fourth year physics student studying at IIT Bombay. In my spare time I do a lot of programming, often open source, and participate in communities like Stack Exchange.
