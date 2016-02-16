@@ -52,5 +52,8 @@ layout: frame
 </div>
 
 {% if page.author %}
-  {% include author.html author=page.author %}
+  <section class="authors">
+    <h3>Author</h3>
+    {% include author.html author=page.author %}
+  </section>
 {% endif %}

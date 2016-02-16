@@ -466,6 +466,22 @@ detail {
   font-style: italic;
 }
 
+.authors {
+  font-size: 0.75em;
+  margin-top: 5em;
+  &:before {
+    display: inline-block;
+    width: 50%;
+    border-top: 2px solid #eee;
+    content: " ";
+    margin-left: 25%;
+  }
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .avatar {
     height: 10em;
     margin: 0.5em;
