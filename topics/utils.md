@@ -21,6 +21,7 @@ packages:
  - chrono
  - time
  - backtrace
+ - docopt
 
 news_tag: utils
 ---
