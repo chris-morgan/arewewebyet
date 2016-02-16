@@ -4,6 +4,8 @@ title: "Crypto"
 
 level: 3
 
+intro: Cryptography is a corner stone of a trusted web. Without it many services could not be offered reliably. While rust has a strong RNG, the main suite in use isn't pure rust but the (in)famous openssl.
+
 suites:
  - openssl
  - rust-crypto

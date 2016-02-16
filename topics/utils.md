@@ -4,6 +4,8 @@ title: "Web Utils"
 
 level: 3
 
+intro: This collects a range of packages which are commonly used and needed in web development, like URL or HTTP-Body-parsers.
+
 packages:
  - cookie
  - clap
