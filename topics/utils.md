@@ -22,6 +22,7 @@ packages:
  - time
  - backtrace
  - docopt
+ - url
 
 news_tag: utils
 ---
