@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang=en itemscope itemtype="http://schema.org/Product">
 	<head>
 		<meta charset=utf-8>
 		<link rel=stylesheet href=/assets/styles.css>
-		<link href=/atom.xml type=application/atom+xml rel=alternate title="Atom feed (for state changes)">
-		<title>Are we web yet? Getting there.</title>
+		<link href=/atom.xml type=application/atom+xml rel=alternate title="Atom feed (for state changes and news)">
+		<title>{% if page.title %}{{page.title}} » AWWY?{% else %}Are we web yet? You can build stuff!{% endif %}</title>
+    <meta name="description" content="{% if page.layout=='news' %}{{ page.content | strip_html | truncate: 350 }}{% else %}AreWeWebYet gives insight on whether you can build your latest web-project on top of Rust{% endif %}" />
+
     <link rel="stylesheet" href="/assets/gh-fork-ribbon.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+
+     <!--  ALL THE STANDARDS for an image!-->
+     <meta itemprop="image" content="http://www.arewewebyet.org/assets/screenshot.png">
+     <meta name="twitter:image" content="http://www.arewewebyet.org/assets/screenshot.png">
+     <meta property="og:image" content="http://www.arewewebyet.org/assets/screenshot.png" />
+
+     <!-- Open Graph extra -->
+     <meta property="og:site_name" content="Are We Web Yet?" />
 	</head>
 	<body>
 
