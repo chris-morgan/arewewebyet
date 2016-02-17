@@ -2,7 +2,7 @@
   date: 2016/02/11
   version: 0.7.2
   type: note
-  text: HTTPS support only on client, not yet on server-side.
+  text: HTTP2 support only on client, not yet on server-side.
 - author: manishearth
   date: 2016/02/10
   version: 0.7.2
