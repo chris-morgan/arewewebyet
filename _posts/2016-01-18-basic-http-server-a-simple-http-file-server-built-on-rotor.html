@@ -15,11 +15,11 @@ tags:
 
 ---
 
-<p>While working on the docs I wanted to be able to serve them quickly, but didn't have a Rust-based tool for it, so I wrote <a href=\"https://github.com/brson/basic-http-server\">basic-http-server</a> as an excuse to play with <a href=\"https://medium.com/@paulcolomiets/async-io-in-rust-part-iii-cbfd10f17203\">rotor</a>. It serves static files out of the current directory over HTTP.</p>
+<p>While working on the docs I wanted to be able to serve them quickly, but didn't have a Rust-based tool for it, so I wrote <a href="https://github.com/brson/basic-http-server">basic-http-server</a> as an excuse to play with <a href="https://medium.com/@paulcolomiets/async-io-in-rust-part-iii-cbfd10f17203">rotor</a>. It serves static files out of the current directory over HTTP.</p>
 
 <p>Here is it's <code>--help</code> output.</p>
 
-<p></p><pre><code class=\"lang-auto\">USAGE:
+<p></p><pre><code class="lang-auto">USAGE:
    basic-http-server [FLAGS] [OPTIONS] [ARGS]
 
   FLAGS:
@@ -32,8 +32,8 @@ tags:
   ARGS:
    ROOT Sets the root dir (default ".")</code></pre>
 
-  <p><a href=\"https://github.com/brson/basic-http-server/blob/master/src/main.rs\">The source is simple and thoroughly commented</a>.</p>
+  <p><a href="https://github.com/brson/basic-http-server/blob/master/src/main.rs">The source is simple and thoroughly commented</a>.</p>
 
   <p>I've had difficulty measuring how fast it is. When I measure with <code>wrk</code> the results seem good, but with <code>ab</code> all requests timeout. I suspect that's a bug in rotor-http, but don't know.</p>
 
-  <p>cc <a class=\"mention\" href=\"/users/tailhook\">@tailhook</a></p>
+  <p>cc <a class="mention" href="/users/tailhook">@tailhook</a></p>

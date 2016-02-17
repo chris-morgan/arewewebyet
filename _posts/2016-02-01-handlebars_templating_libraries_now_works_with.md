@@ -23,7 +23,7 @@ This is implemented via a feature called `serde_type`. Internally we use `serde_
 
 ```
  [features]
-  default = [\"handlebars-iron/serde_type\"]
+  default = ["handlebars-iron/serde_type"]
 ```
 
 The API is fully compatible with default one so you don't have to change any code except the data type.
