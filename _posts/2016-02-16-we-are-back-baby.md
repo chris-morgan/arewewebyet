@@ -17,7 +17,7 @@ It has been long, since you heard from us. But we are back – with an all new 
 
 ## A relaunch was needed
 
-A lot has happened over the last year in Rust Web-Development since the first inception of AreWeWebYet. While some parts of the ecosystem grew quickly, others are still lacking in features, support and stability. But the shire number of packages we'd have to list now, would make the website inaccessible and hard to maintain. It was time to rethink how we could answer the question differently. The rewrite of this website is reflecting that, by not only **giving a more nuanced answer** on its main page, but also **shed more light [into each separate topic](/topics/)** so you can take a more informed decision.
+A lot has happened over the last year in Rust Web-Development since the first inception of AreWeWebYet. While some parts of the ecosystem grew quickly, others are still lacking in features, support and stability. But the sheer number of packages we'd have to list now, would make the website inaccessible and hard to maintain. It was time to rethink how we could answer the question differently. The rewrite of this website is reflecting that, by not only **giving a more nuanced answer** on its main page, but also **shed more light [into each separate topic](/topics/)** so you can take a more informed decision.
 
 ## More, detailed info
 
