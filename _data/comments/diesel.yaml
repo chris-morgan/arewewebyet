@@ -1,0 +1,10 @@
+- author: mattgreenrocks
+  date: 2016/02/07
+  version: 0.5.0
+  type: recommendation
+  source_link: "https://lobste.rs/s/rf8zci/diesel_is_a_safe_extensible_orm_and_query_builder/comments/pyif2a#c_pyif2a"
+  text: "Let’s talk about how wonderful it is that Diesel has a nice API while allowing you to abstract over it.
+
+
+Most DB abstractions provide one or the other, reinforcing the mistaken notion that we need to sell our architecture to persistence libraries.
+"

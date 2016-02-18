@@ -1,0 +1,21 @@
+{% assign cmt = include.comment %}
+{% assign author = site.data.authors[cmt.author] %}
+<blockquote {% if cmt.source_link %} cite="{{cmt.source_link}}" {% endif %} class="review {{cmt.type}}">
+  {{cmt.text | markdownify}}
+  <cite>
+    <p>
+      <img src="{{author.img|default:'/asset/bashy-big.svg'}}">
+      <a {% if cmt.source_link %}
+          href="{{cmt.source_link}}"
+        {% elsif author.curator %}
+          href="/curators/#{{cmt.author}}"
+        {% else %}
+          href="{{author.homepage}}"
+        {% endif %}>
+        <span class="name">{{author.name}}</span></a>
+      ,
+      <span class="date">{{cmt.date | date_to_string }}</span>
+      <span class="version">on version {{cmt.version}}</span>
+    </p>
+  </cite>
+</blockquote>

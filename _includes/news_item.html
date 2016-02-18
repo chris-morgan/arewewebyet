@@ -1,0 +1,4 @@
+{% assign post=included.post %}
+<li class="news-item">
+  <span class="date">{{post.date | date_to_string }}</span><a href="{{ post.url }}" class="title">{{ post.title }}</a>
+</li>

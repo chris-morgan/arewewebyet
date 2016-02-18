@@ -1,0 +1,49 @@
+ben:
+  name: Benjamin Kampmann
+  curator: true
+  img: http://www.create-build-execute.com/assets/images/ben.png
+  bio: >
+    Freelance OpenSource Software Architect and Developer
+
+
+    I design, build and supervise the building of software (systems). Sometimes for clients, often times on my own, whenever possible as OpenSource. I care about good design in both, the User Experience and backend architecture and infrastructure. And I write about all this stuff.
+  twitter: SirDonQui
+  github: ligthyear
+  homepage: http://www.create-build-execute.com
+
+manishearth:
+  name: Manish Goregaokar
+  curator: true
+  img: https://www.gravatar.com/avatar/0a3069491bfded90cdf623341cadc1d1?s=512&amp;d=identicon&amp;r=PG&amp;s=50
+  bio: >
+    I’m a fourth year physics student studying at IIT Bombay. In my spare time I do a lot of programming, often open source, and participate in communities like Stack Exchange.
+
+    These days I contribute to the [Servo browser engine](http://github.com/servo/servo) and occasionally to the [Rust programming language](http://github.com/rust-lang/rust)
+  twitter: Manishearth
+  github: manishearth
+  homepage: "http://manishearth.github.io/"
+
+steve:
+  name: Steve Klabnik
+  img: "https://secure.gravatar.com/avatar/233c279c012ebac792aaa805f966cbc7?size=220"
+  github: steveklabnik
+  twitter: steveklabnik
+  homepage: http://words.steveklabnik.com/
+  bio: Hi, I'm Steve! I enjoy turning coffee into code, writing, philosophy, and physical activity. This is my own little corner of the internets. Enjoy!
+
+
+
+# The following aren't in the system but externals
+flosse:
+  name: flosse
+  img: "https://avatars1.githubusercontent.com/u/276043?v=3&s=460"
+  homepage: "https://github.com/flosse"
+
+mattgreenrocks:
+  name: mattgreenrocks
+  img: https://secure.gravatar.com/avatar/7e01d0a8ef8d90e1c5195f27b34ae999?r=pg&d=identicon&s=100
+
+seanmonster:
+  name: Sean McArthur
+  twitter: seanmonster
+  img: http://www.gravatar.com/avatar/dfb248d98bc7c238fccd5aad53624eab.png

@@ -1,0 +1,40 @@
+{% assign pkg=site.data.pkgs[include.name].crate %}
+
+{% if pkg %}
+<li id="pkg-{{pkg.id}}" class="pkg">
+  <span class="pkg-name" title="est. {{pkg.created_at | date_to_string}}, last updated: {{pkg.updated_at | date_to_string}}">{{pkg.name}}</span>
+
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/{{pkg.id}}"><i class="fa fa-cube"></i></a>
+
+  {% if pkg.homepage %}
+   <a class="pkg-link" title="homepage" href="{{pkg.homepage}}"><i class="fa fa-home"></i></a>
+  {% endif %}
+
+  {% if pkg.documentation %}
+   <a class="pkg-link" title="documentation" href="{{pkg.documentation}}"><i class="fa fa-book"></i></a>
+  {% endif %}
+
+  {% if pkg.repository %}
+   <a class="pkg-link" title="repository" href="{{pkg.repository}}"><i class="fa fa-code"></i></a>
+  {% endif %}
+
+  <a class="pkg-link action" title="permalink" href="#pkg-{{pkg.id}}"><i class="fa fa-hashtag"></i></a>
+
+
+
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/{{pkg.id}}.svg" /> <img src="https://img.shields.io/crates/d/{{pkg.id}}.svg" />  <img src="https://img.shields.io/crates/l/{{pkg.id}}.svg" />
+  </p>
+  <p class="pkg-desc">
+      {{pkg.description }}
+  </p>
+  {% unless include.omit_comments %}
+    {% assign comments=site.data.comments[pkg.id] %}
+    {% if comments %}
+      {% include comments.html comments=comments %}
+    {% endif %}
+  {% endunless %}
+</li>
+{% else %}
+<h1>PACKAGE MISSING: {{include.name}}</h1>
+{% endif %}

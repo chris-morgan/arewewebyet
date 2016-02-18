@@ -1,0 +1,10 @@
+- author: ben
+  date: 2016/02/11
+  version: 0.7.2
+  type: note
+  text: HTTP2 support only on client, not yet on server-side.
+- author: manishearth
+  date: 2016/02/10
+  version: 0.7.2
+  type: recommendation
+  text: I don't see hyper having major breaking changes in the forseeable future and is pretty usable/ready.

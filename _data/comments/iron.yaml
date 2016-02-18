@@ -1,0 +1,6 @@
+- author: flosse
+  date: 2015/08/16
+  version: 0.1.20
+  type: info
+  source_link: "https://github.com/flosse/rust-web-framework-comparison#middleware--plugins"
+  text: "Most basic Features complete: Static File Serving ✓, Mounting ✓, Logging ✓, JSON-Body ✓, Sessions ✓, Cookies ✓ , HTTPS ✓ . Database Support/ORM: ✗ ."
